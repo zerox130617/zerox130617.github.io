@@ -1,0 +1,30 @@
+title: "My blog"
+email: xxx
+description: >-
+  這是我的第一個使用 Jekyll 和 GitHub Pages 建立的免費個人網站，
+  主要用來分享遊戲相關(含製作/引擎)/ 程式等。
+baseurl: ""
+url: "https://zerox130617.github.io" 
+
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark" # 可選 "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "sunrise"
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "single"
+      read_time: true
+      share: true
+      related: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme

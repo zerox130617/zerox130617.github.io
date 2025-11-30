@@ -1,4 +1,6 @@
 source "https://rubygems.org"
-gem "jekyll"
-gem "github-pages", group: :jekyll_plugins
-
+gem "jekyll", "~> 4.3"
+gem "liquid", "~> 4.0"
+gem "jekyll-feed"
+gem "jekyll-remote-thbuneme"
+gem "webrick", "~> 1.9"

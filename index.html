@@ -1,0 +1,19 @@
+---
+layout: home # 使用 Minimal Mistakes 主題的 home layout
+title: 網站首頁
+header:
+  overlay_image: /assets/images/header.jpg
+  overlay_filter: 0.5 # 圖像疊加濾鏡
+  caption: "圖片來源: Unsplash"
+---
+
+# 歡迎來到我的部落格！
+
+這是我的網站首頁內容。您可以在這裡介紹您的網站，或者直接顯示最新的文章列表。
+
+---
+
+## 最新文章：
+{% for post in site.posts limit: 5 %}
+  {% include archive-single.html %}
+{% endfor %}
