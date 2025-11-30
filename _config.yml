@@ -27,4 +27,9 @@ defaults:
 
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
+  # - jekyll-remote-theme
