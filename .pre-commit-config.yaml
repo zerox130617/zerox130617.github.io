@@ -1,0 +1,19 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v5.0.0 # 使用最新的版本號
+  hooks:
+    - id: check-yaml            # 檢查 YAML 語法，用於 _config.yml 和 Front Matter
+    - id: end-of-file-fixer     # 確保檔案末尾有一個空行
+    - id: trailing-whitespace   # 移除行尾多餘的空白
+    - id: check-added-large-files # 檢查是否有新增過大的檔案
+
+- repo: https://github.com/igorshubovych/markdownlint-cli
+  rev: v0.41.0
+  hooks:
+    - id: markdownlint
+
+- repo: https://github.com/pre-commit/mirrors-prettier
+  rev: v3.1.0
+  hooks:
+    - id: prettier
+      types: [markdown, yaml, json, css, scss] # 只對這些檔案類型運行
